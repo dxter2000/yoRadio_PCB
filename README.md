@@ -47,3 +47,8 @@ Optional connector:
 https://www.tme.eu/ro/en/details/cc-114/rca-connectors/changzhou-dahua-imp-and-exp-group-co/vg03094black/
 https://www.tme.eu/ro/en/details/cc-115/rca-connectors/changzhou-dahua-imp-and-exp-group-co/vg03094-red/
 https://www.tme.eu/ro/en/details/jc-204s/jack-connectors/ninigi/
+### PCB images
+https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_pcb_top.png
+https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_pcb_bottom.png
+https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_schematic.png
+
