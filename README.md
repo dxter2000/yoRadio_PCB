@@ -104,7 +104,7 @@ SJ1 needs to be connected only if we use LCD with Touch
 
 SJ2 disconnected
 
-SJ3 needs to be connected only when we do not use the LD1117-3.3V regulator
+SJ3 needs to be connected only when we do not use the LD1117-3.3V regulator. The regulator is recommended when use LCD wit 3.3V supply or microSD card.
 
 J1-0R selects the supply voltage for the 3.5 LCD and JP17 connectors. Check your LCD datasheet.
 
