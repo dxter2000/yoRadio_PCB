@@ -97,7 +97,8 @@ https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_schem
 
 ### Assembly instructions
 The PCB is designed to work with different configurations, so not all the components in the schematic are nedded to be soldered on.
-
+Populate the components you need in this order
+:
 ##### SMD jumpers:
 SJ1 needs to be connected only if we use LCD with Touch
 
@@ -142,8 +143,54 @@ D4 = SS14 schottky diode reverse polarity protection on 5V input, recommended if
 
 ##### THT capacitors:
 
-C5 = 220uF/35V, optional with MP1584 converter, mounded on the bottom side, on the side
+C5 = 220uF/35V, size Ø8x16mm, optional with MP1584 converter, mounded on the bottom side, on the side
 
-C16 = 470uF/16V, optional 5V buffer capacitor, mounded on the bottom side, on the side
+C16 = 470uF/16V, size Ø8x16mm, optional 5V buffer capacitor, mounded on the bottom side, on the side
 
-C18 = 470uF/16V, optional 5V buffer capacitor, mounded on the top side, when no MP1584 converter board is used
+C18 = 470uF/16V, size Ø8x16mm, optional 5V buffer capacitor, mounded on the top side, when no MP1584 converter board is used
+
+##### Pin headers & connectors:
+
+Use only what you need.
+
+DC - Input 9 - 24V
+
+JP1 - Encoder1 connector
+
+JP2 - Encoder2 connector
+
+JP3, JP6 - I2C connector, used for I2C display or RTC module
+
+JP4 - Jumper to connect 5V from MP1584 to the circuit, connect jumper only afther adjust MP1584 module
+
+JP5 - future features
+
+JP7 - 5V input or output
+
+JP8 - SD card reader on SPI3 (VSPI)
+
+JP9 - IR Receiver
+
+JP10, JP11 - Audio connector for potentiometer and audio line out connectors, connect on one of them pins 1-2 and pins 3-4 to route audio to amplifier module
+
+JP12 - future features 
+
+JP13 - SPI2 (VSPI) for SDcard
+
+JP14 LCD connector for simple LCD1602 display or other SPI LCD, with selectable supply 3.3-5V. WARNING: Pins are not in order for SPI displays, use custom wiring 
+
+JP15, JP16 Speakers output
+
+JP17 - LCD ST7789_76 connector, it has reversed + with - and backlight is reversed with T1
+
+##### Solder boards:
+
+Put female headers on ESP32-S3 DevKit board too keep them straight and solder them to PCB. It is recommended to use pin header pair, so tha the ESP32-S3 module can be removable.
+
+Check solder jumpers on PCM5102A board as shown in the pictures, then solder wit the pinheads on the PCB
+
+If want to use onboard amplifier, solder the PAM 8403 amplifier module
+
+If want to use 9-24V DC supply input, on the MP1584 DC-DC converter adjust the output to 5V. I higly recommend NOT to set from the tiny trimmer, because it could drift away easily. The best method is to desolder the trimmer and put a 38kΩ resistor there. I made this value from 3 SMD 1206 resistor of 47k + 250k + 1Mega paralell (one on top of the another). Check the output voltage. Solder it on PCB, If output voltage is 5V +/-0.5V you can connect JP4.
+
+##### Load the software and enjoy the Radio!
