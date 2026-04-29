@@ -69,9 +69,9 @@ https://www.tme.eu/ro/en/details/jc-204s/jack-connectors/ninigi/
 
 ### PCB images
 
-https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_pcb_top.png  
-https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_pcb_bottom.png  
-https://github.com/dxter2000/yoRadio_PCB/blob/main/ESP32_S3_Radio_3.5v1.01_schematic.png
+![PCB_top](ESP32_S3_Radio_3.5v1.01_pcb_top.png)
+![PCB_bottom](ESP32_S3_Radio_3.5v1.01_pcb_bottom.png)
+![PCB_schematics](ESP32_S3_Radio_3.5v1.01_schematic.png)
 
 ### Assembly instructions
 The PCB is designed to work with different configurations, so not all the components in the schematic are nedded to be soldered on.
@@ -133,9 +133,8 @@ JP17 - LCD ST7789_76 connector, it has reversed + with - and backlight is revers
 Put female headers on ESP32-S3 DevKit board too keep them straight and solder them to PCB. It is recommended to use pin header pair, so tha the ESP32-S3 module can be removable.
 
 Check solder jumpers on PCM5102A board as shown in the pictures, then solder with the pinheads on the PCB  
-https://github.com/dxter2000/yoRadio_PCB/blob/main/PCM5102_JUMPER.JPG  
-https://github.com/dxter2000/yoRadio_PCB/blob/main/PCM5102_SCK.JPG
-
+![Jumpers](PCM5102_JUMPER.JPG)
+![Jumper_SCK](PCM5102_SCK.JPG)
 If want to use onboard amplifier, solder the PAM 8403 amplifier module
 
 If want to use 9-24V DC supply input, on the MP1584 DC-DC converter adjust the output to 5V. I higly recommend NOT to set from the tiny trimmer, because it could drift away easily. The best method is to desolder the trimmer and put a 38kΩ resistor there. I made this value from 3 SMD 1206 resistor of 47k + 250k + 1Mega paralell (one on top of the another). Check the output voltage. Solder it on PCB, If output voltage is 5V +/-0.5V you can connect JP4.
