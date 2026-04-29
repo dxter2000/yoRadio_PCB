@@ -133,8 +133,8 @@ JP17 - LCD ST7789_76 connector, it has reversed + with - and backlight is revers
 Put female headers on ESP32-S3 DevKit board too keep them straight and solder them to PCB. It is recommended to use pin header pair, so tha the ESP32-S3 module can be removable.
 
 Check solder jumpers on PCM5102A board as shown in the pictures, then solder with the pinheads on the PCB  
-https://github.com/dxter2000/yoRadio_PCB/edit/main/PCM5102_JUMPER.JPG  
-https://github.com/dxter2000/yoRadio_PCB/edit/main/PCM5102_SCK.JPG
+https://github.com/dxter2000/yoRadio_PCB/blob/main/PCM5102_JUMPER.JPG  
+https://github.com/dxter2000/yoRadio_PCB/blob/main/PCM5102_SCK.JPG
 
 If want to use onboard amplifier, solder the PAM 8403 amplifier module
 
